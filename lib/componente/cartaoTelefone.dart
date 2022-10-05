@@ -7,13 +7,15 @@ class CartaoTelefone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: ListTile(
-        title: const Text("Telefone"),
-        subtitle: const Text("(44) 9 1111-1111"),
-        trailing: PainelTelefone(
-          funcaoSMS: chamarTelefone,
-          funcaoTelefone: chamarSMS,
+    return Container(
+      child: Card(
+        child: ListTile(
+          title: const Text("Telefone"),
+          subtitle: const Text("(44) 9 1111-1111"),
+          trailing: PainelTelefone(
+            funcaoSMS: chamarTelefone,
+            funcaoTelefone: chamarSMS,
+          ),
         ),
       ),
     );

@@ -8,12 +8,14 @@ class CartaoEmail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: ListTile(
-        title: const Text("Email"),
-        subtitle: const Text("mthws.henrique@hotmail.com"),
-        trailing: PainelEmail(
-          funcaoEmail: chamarEmail,
+    return Container(
+      child: Card(
+        child: ListTile(
+          title: const Text("Email"),
+          subtitle: const Text("mthws.henrique@hotmail.com"),
+          trailing: PainelEmail(
+            funcaoEmail: chamarEmail,
+          ),
         ),
       ),
     );
